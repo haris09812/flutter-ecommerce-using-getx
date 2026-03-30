@@ -2,7 +2,7 @@ import 'package:Arccessory/common/widgets/appbar/appbar.dart';
 import 'package:Arccessory/common/widgets/icons/t_circular_icon.dart';
 import 'package:Arccessory/common/widgets/layouts/grid_layout.dart';
 import 'package:Arccessory/common/widgets/product/product_cards/product_card_vertical.dart';
-import 'package:Arccessory/features/shop/screens/home/home.dart';
+import 'package:Arccessory/features/shop/screens/all_products/all_products.dart';
 import 'package:Arccessory/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -16,7 +16,7 @@ class FavouriteScreen extends StatelessWidget {
       appBar: TAppBar(
         title: Text('Wishlist', style: Theme.of(context).textTheme.headlineMedium),
         actions: [
-          TCircularIcon(icon: Iconsax.add, onPressed: () => Get.to(const HomeScreen())),
+          TCircularIcon(icon: Iconsax.add, onPressed: () => Get.to(const AllProducts())),
         ],
       ),
       body: SingleChildScrollView(

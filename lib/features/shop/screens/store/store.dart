@@ -3,6 +3,7 @@ import 'package:Arccessory/common/widgets/appbar/tab_bar.dart';
 import 'package:Arccessory/common/widgets/layouts/grid_layout.dart';
 import 'package:Arccessory/common/widgets/product/cart/cart_menu.dart';
 import 'package:Arccessory/common/widgets/texts/section_heading.dart';
+import 'package:Arccessory/features/shop/screens/brands/brands.dart';
 import 'package:Arccessory/features/shop/screens/cart/cart.dart';
 import 'package:Arccessory/features/shop/screens/home/widgets/search_bar.dart';
 import 'package:Arccessory/common/widgets/brand/brand_card.dart';
@@ -59,7 +60,7 @@ class StoreScreen extends StatelessWidget {
                       /// Featured Brand
                       TSectionHeading(
                         title: 'Featured Brands',
-                        onPressed: () {},
+                        onPressed: () => Get.to(() => const AllBrandsScreen()),
                       ),
                       TGridLayout(
                         itemCount: 4,
