@@ -12,7 +12,7 @@ class OrderListItem extends StatelessWidget {
     final dark = THelperFunctions.isDarkMode(context);
     return ListView.separated(
       shrinkWrap: true,
-      itemCount: 4,
+      itemCount: 3,
       separatorBuilder: (_, __) => SizedBox(height: TSizes.spaceBtwItems,),
       itemBuilder: (_, index) => TRoundedContainer(
         showBorder: true,
