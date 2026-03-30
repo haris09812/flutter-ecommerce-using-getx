@@ -1,12 +1,12 @@
 import 'package:Arccessory/common/widgets/appbar/appbar.dart';
 import 'package:Arccessory/common/widgets/custom_shapes/containers/primary_header_container.dart';
-import 'package:Arccessory/common/widgets/images/t_circular_image.dart';
 import 'package:Arccessory/common/widgets/list_tiles/setting_menu_tile.dart';
 import 'package:Arccessory/common/widgets/list_tiles/user_profile_tile.dart';
 import 'package:Arccessory/common/widgets/texts/section_heading.dart';
+import 'package:Arccessory/features/personalizations/screens/address/address.dart';
 import 'package:Arccessory/utils/constants/colors.dart';
-import 'package:Arccessory/utils/constants/image_strings.dart';
 import 'package:Arccessory/utils/constants/sizes.dart';
+import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 class SettingsScreen extends StatelessWidget {
@@ -42,7 +42,7 @@ class SettingsScreen extends StatelessWidget {
                   const TSectionHeading(title: 'Account Settings', showActionButton: false),
                   const SizedBox(height: TSizes.spaceBtwItems,),
 
-                  SettingMenuTile(icon: Iconsax.safe_home, title: 'My Addresses', subTitle: 'Set Shopping delivery address', onTap: (){}),
+                  SettingMenuTile(icon: Iconsax.safe_home, title: 'My Addresses', subTitle: 'Set Shopping delivery address', onTap: ()=> Get.to(() => const UserAddressScreen())),
                   SettingMenuTile(icon: Iconsax.shopping_cart, title: 'My Cart', subTitle: 'Add, remove products and move to checklist', onTap: (){}),
                   SettingMenuTile(icon: Iconsax.bag_tick, title: 'My Orders', subTitle: 'In-progress and Complete Orders', onTap: (){}),
                   SettingMenuTile(icon: Iconsax.bank, title: 'Bank Account', subTitle: 'Withdraw Balance to registered bank account', onTap: (){}),
