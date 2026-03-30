@@ -39,6 +39,8 @@ class ProductDetailScreen extends StatelessWidget {
                   const SizedBox(height: TSizes.spaceBtwSections,),
                   /// -- Checkout Button
                   SizedBox(width: double.infinity, child: ElevatedButton(onPressed: (){}, child: const Text('Checkout'))),
+                  const SizedBox(height: TSizes.spaceBtwItems,),
+                  SizedBox(width: double.infinity, child: OutlinedButton(onPressed: (){}, child: const Text('Try on AR'))),
                   const SizedBox(height: TSizes.spaceBtwSections,),
                   /// - Description
                   const TSectionHeading(title: 'Description', showActionButton: false),
