@@ -9,15 +9,16 @@ import 'package:Arccessory/utils/helpers/exports.dart';
 import 'package:flutter/material.dart';
 class BrandCard extends StatelessWidget {
   const BrandCard({
-    super.key, this.showBorder = true,
+    super.key, this.showBorder = true, this.onTap,
   });
 
   final bool showBorder;
+  final void Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: (){},
+      onTap: onTap,
       child: TRoundedContainer(
         padding: EdgeInsets.all(TSizes.sm),
         showBorder: showBorder,

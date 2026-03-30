@@ -1,6 +1,8 @@
 import 'package:Arccessory/common/widgets/image_text/image_text_vertical.dart';
+import 'package:Arccessory/features/shop/screens/categories/category.dart';
 import 'package:Arccessory/utils/constants/image_strings.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 class HomeCategories extends StatelessWidget {
   const HomeCategories({
     super.key,
@@ -18,7 +20,7 @@ class HomeCategories extends StatelessWidget {
           return TVerticalImageAndText(
             image: TImages.earringIcon,
             title: "Earings",
-            onTap: () {},
+            onTap: () => Get.to(() => const CategoryScreen()),
           );
         },
       ),
