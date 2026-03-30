@@ -2,6 +2,7 @@ import 'package:Arccessory/common/widgets/custom_shapes/containers/primary_heade
 import 'package:Arccessory/common/widgets/layouts/grid_layout.dart';
 import 'package:Arccessory/common/widgets/product/product_cards/product_card_vertical.dart';
 import 'package:Arccessory/common/widgets/texts/section_heading.dart';
+import 'package:Arccessory/features/shop/screens/all_products/all_products.dart';
 import 'package:Arccessory/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:Arccessory/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:Arccessory/features/shop/screens/home/widgets/promo_slider.dart';
@@ -9,6 +10,7 @@ import 'package:Arccessory/features/shop/screens/home/widgets/search_bar.dart';
 import 'package:Arccessory/utils/constants/image_strings.dart';
 import 'package:Arccessory/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -61,7 +63,7 @@ class HomeScreen extends StatelessWidget {
                   const SizedBox(height: TSizes.spaceBtwSections),
                   
                   /// Heading
-                  TSectionHeading(title: "Popular Products"),
+                  TSectionHeading(title: "Popular Products", onPressed: () => Get.to(() => AllProducts()),),
                   const SizedBox(height: TSizes.spaceBtwItems),
 
                   /// Popular Products
