@@ -1,4 +1,5 @@
 import 'package:Arccessory/common/widgets/texts/section_heading.dart';
+import 'package:Arccessory/features/shop/screens/checkout/checkout.dart';
 import 'package:Arccessory/features/shop/screens/product_details/widgets/bottom_add_to_cart.dart';
 import 'package:Arccessory/features/shop/screens/product_details/widgets/product_attribute.dart';
 import 'package:Arccessory/features/shop/screens/product_details/widgets/product_detail_image_slider.dart';
@@ -38,7 +39,7 @@ class ProductDetailScreen extends StatelessWidget {
                   const ProductAttributes(),
                   const SizedBox(height: TSizes.spaceBtwSections,),
                   /// -- Checkout Button
-                  SizedBox(width: double.infinity, child: ElevatedButton(onPressed: (){}, child: const Text('Checkout'))),
+                  SizedBox(width: double.infinity, child: ElevatedButton(onPressed: ()=> Get.to(()=> const CheckoutScreen()), child: const Text('Checkout'))),
                   const SizedBox(height: TSizes.spaceBtwItems,),
                   SizedBox(width: double.infinity, child: OutlinedButton(onPressed: (){}, child: const Text('Try on AR'))),
                   const SizedBox(height: TSizes.spaceBtwSections,),
