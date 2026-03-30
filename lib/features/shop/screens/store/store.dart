@@ -3,6 +3,7 @@ import 'package:Arccessory/common/widgets/appbar/tab_bar.dart';
 import 'package:Arccessory/common/widgets/layouts/grid_layout.dart';
 import 'package:Arccessory/common/widgets/product/cart/cart_menu.dart';
 import 'package:Arccessory/common/widgets/texts/section_heading.dart';
+import 'package:Arccessory/features/shop/screens/cart/cart.dart';
 import 'package:Arccessory/features/shop/screens/home/widgets/search_bar.dart';
 import 'package:Arccessory/common/widgets/brand/brand_card.dart';
 import 'package:Arccessory/features/shop/screens/store/widgets/category_tab.dart';
@@ -10,6 +11,7 @@ import 'package:Arccessory/utils/constants/colors.dart';
 import 'package:Arccessory/utils/constants/sizes.dart';
 import 'package:Arccessory/utils/helpers/exports.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class StoreScreen extends StatelessWidget {
   const StoreScreen({super.key});
@@ -24,7 +26,7 @@ class StoreScreen extends StatelessWidget {
             'Store',
             style: Theme.of(context).textTheme.headlineMedium,
           ),
-          actions: [TCartCounterIcon(onPressed: () {})],
+          actions: [TCartCounterIcon(onPressed: () => Get.to(() => const CartScreen()))],
         ),
         body: NestedScrollView(
           headerSliverBuilder: (_, innerBoxIsScroll) {
